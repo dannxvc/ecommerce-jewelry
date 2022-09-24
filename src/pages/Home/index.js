@@ -6,7 +6,10 @@ import Section from '../../components/Section';
 import { default as ProductOne } from '../../img/products/ring-white-small-diamonds-silver.png';
 import { default as ProductTwo } from '../../img/products/ring-green-small-silver.png';
 import { default as ProductThree } from '../../img/products/ring-red-gold.png';
+import FAQ from '../../components/FAQ';
+import Contact from '../../components/Contact';
 function Home() {
+
     const products = [
         {
             id:"1",
@@ -52,10 +55,19 @@ function Home() {
                     />
                 ))}
             </Section>
+
             <Section
                 title={"FAQ"} 
                 subtitle={"Got a question? Check this out!"}   
             >
+                <FAQ/>
+            </Section>
+
+            <Section
+                title={"Contact"} 
+                subtitle={"Let’s get in touch, send us an email!"}
+            >
+                <Contact/>
             </Section>
         </main>
         <Footer/>

@@ -1,4 +1,4 @@
-function Buuton({text}) {
+function Button({text}) {
     return ( 
         <button>
             {text}
@@ -6,4 +6,4 @@ function Buuton({text}) {
      );
 }
 
-export default Buuton;
+export default Button;

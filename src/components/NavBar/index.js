@@ -2,7 +2,6 @@ function NavBar() {
     let navItems = [
         "Home",
         "Products",
-        "About",
         "FAQ",
         "Contact"
     ];
