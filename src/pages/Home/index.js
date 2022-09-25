@@ -3,10 +3,14 @@ import Footer from '../../components/Footer';
 import NavBar from '../../components/NavBar';
 import Button from '../../components/Button';
 import Section from '../../components/Section';
+import { default as RingHeader } from '../../img/products/ring-white-silver.png';
+import { default as Background } from '../../img/background.png';
 import { default as ProductOne } from '../../img/products/ring-white-small-diamonds-silver.png';
 import { default as ProductTwo } from '../../img/products/ring-green-small-silver.png';
 import { default as ProductThree } from '../../img/products/ring-red-gold.png';
 import FAQ from '../../components/FAQ';
+import '../../App.css';
+import styles from './styles.module.css';
 import Contact from '../../components/Contact';
 function Home() {
 
@@ -35,9 +39,17 @@ function Home() {
     ];
     return ( 
     <>
-        <header>
+        <header className={styles.header}>
             <NavBar></NavBar>
-            <h1>Best quality Rings</h1> 
+            <div className={styles.hero}>
+                <h1 className={styles.h1}>
+                    <span className='text-purple'>Best </span>  
+                    quality 
+                    <span className='text-orange'> Rings</span>
+                </h1>
+                <img className={styles.img_header} src={RingHeader} alt="Diamond Engagement"/>
+            </div>
+            <img className={styles.img_bg} src={Background} alt="Diamond Engagement"/>
         </header>
         <main>
             <Section

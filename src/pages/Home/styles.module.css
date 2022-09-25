@@ -1,0 +1,15 @@
+.header{
+    @apply min-h-screen;
+}
+.hero{
+    @apply min-h-screen justify-start relative flex items-center w-10/12 max-w-3xl m-auto;
+}
+.img_header{
+    @apply h-auto w-xxl absolute left-20;
+}
+.h1{
+    @apply text-xl w-96 z-10 font-semibold;
+}
+.img_bg{
+    @apply absolute top-0 right-0
+}

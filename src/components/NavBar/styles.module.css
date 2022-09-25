@@ -1,0 +1,12 @@
+.navbar, .nav_items{
+    @apply flex items-center;
+}
+.navbar{
+    @apply z-20 backdrop-blur fixed w-full text-md justify-between h-24 px-40 font-semibold;
+}
+.nav_items{
+    @apply gap-14;
+}
+.logo{
+    @apply text-l;
+}
