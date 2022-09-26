@@ -26,6 +26,7 @@ module.exports = {
       'black': '#2F2F38',
       'purple': '#BF94EB',
       'purple-light': '#E7D9F4',
+      'purple-transparent': '#F6EEFF',
       'orange': '#F27D85',
       'white': '#FFFFFF',
       'transparent':'transparent'

@@ -1,11 +1,14 @@
 .faq_container{
-    @apply max-w-[90%] w-[45rem] m-auto;
+    @apply max-w-[45rem] w-[100%] m-auto mt-20;
 }
 .faq_item{
-    @apply transition ease-in-out max-w-[90%] w-[45rem] m-auto p-3 mb-6 border-solid border-black cursor-pointer rounded-full border-2 shadow-lg shadow-purple-light;
+    @apply m-auto p-3 mb-6 border-solid border-white rounded-full border shadow-lg shadow-purple-light;
+}
+.faq_item:hover{
+    @apply shadow-md shadow-purple-light;
 }
 .faq_question{
-    @apply font-medium text-[1.1rem] ;
+    @apply font-medium text-[1.1rem] cursor-pointer;
 }
 .faq_answer_container{
     @apply p-4 pt-7 mt-3 border-dotted border-2 border-transparent border-t-purple-light ;
@@ -16,10 +19,3 @@
 .faq_question::marker{
     content: none;
 }
-.faq_item[open] summary ~ * {
-    animation: sweep .5s ease-in-out;
-}
-@keyframes sweep {
-    0%    {opacity: 0; padding-top: 0px}
-    100%  {opacity: 1; padding-top: 28px}
- }

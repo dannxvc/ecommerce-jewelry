@@ -7,6 +7,3 @@
 .nav_items{
     @apply gap-14;
 }
-.logo{
-    @apply text-l;
-}

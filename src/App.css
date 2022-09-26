@@ -5,6 +5,9 @@ body{
 .icon{
     @apply h-9;
 }
+.logo{
+    @apply text-[2rem] font-semibold;
+}
 html{
     box-sizing: border-box;
 }
@@ -13,4 +16,16 @@ html{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+}
+.input{
+    @apply border rounded-full p-4 bg-transparent;
+}
+.input::placeholder{
+    @apply text-black;
+}
+.textarea{
+    @apply h-36 border rounded-3xl p-4 bg-transparent resize-none;
+}
+.textarea::placeholder{
+    @apply text-black;
 }

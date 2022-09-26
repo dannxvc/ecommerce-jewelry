@@ -1,6 +1,15 @@
 .btn{
-    @apply p-2 border-2 border-solid rounded-full border-black;
+    @apply p-2 border-2 border-solid rounded-full border-black shadow-md shadow-purple-light transition ease-in-out;
 }
 .btn_black{
-    @apply w-72 p-4 bg-black text-white;
+    @apply w-72 p-4 bg-black text-white m-auto;
+}
+.btn_black:hover{
+    @apply bg-transparent text-black transition ease-in-out;
+}
+.btn_white{
+    @apply border-white;
+}
+.btn:hover{
+    @apply shadow-sm;
 }

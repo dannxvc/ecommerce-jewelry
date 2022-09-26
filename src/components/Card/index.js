@@ -11,6 +11,7 @@ function Card({title,subtitle,price,img}) {
             <p>{price}</p>
             <Button
                 text={"Add to cart"}
+                classBtn={"btn_white"}
             />
         </div>
     );

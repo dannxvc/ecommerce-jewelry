@@ -1,5 +1,5 @@
 .section{
-    @apply text-center mb-40;
+    @apply text-center pb-40;
 }
 .title{
     @apply font-semibold text-l;

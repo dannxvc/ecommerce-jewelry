@@ -1,0 +1,9 @@
+.footer{
+    @apply flex justify-between items-center px-40 py-4 bg-black;
+}
+.footer_icons_container{
+    @apply flex items-center;
+}
+.footer_logo{
+    @apply text-white;
+}

@@ -9,7 +9,7 @@ function NavBar() {
     return ( 
         <nav className={styles.navbar}>
             <div>
-                <p className={styles.logo}>RingRing</p>
+                <p className="logo">RingRing</p>
             </div>
             <ul className={styles.nav_items}>
             {navItems.map((item,i)=>(

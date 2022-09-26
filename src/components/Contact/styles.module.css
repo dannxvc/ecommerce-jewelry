@@ -1,0 +1,3 @@
+.contact_container{
+    @apply max-w-[45rem] w-[100%] m-auto grid gap-6; 
+}
