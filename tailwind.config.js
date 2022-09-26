@@ -16,7 +16,7 @@ module.exports = {
       sm: '.8rem',
       base: '1rem',
       md:'1.2rem',
-      l:'2rem',
+      l:'3rem',
       xl: '4rem',
     },
     fontFamily: {
@@ -25,8 +25,9 @@ module.exports = {
     colors: {
       'black': '#2F2F38',
       'purple': '#BF94EB',
-      'purple-light': '#EDEDFF',
-      'orange': '#F27D85'
+      'purple-light': '#E7D9F4',
+      'orange': '#F27D85',
+      'white': '#FFFFFF'
     }
   },
   plugins: [],

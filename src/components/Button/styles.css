@@ -1,0 +1,6 @@
+.btn{
+    @apply p-2 border-2 border-solid rounded-full border-black;
+}
+.btn_black{
+    @apply w-72 p-4 bg-black text-white;
+}

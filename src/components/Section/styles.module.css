@@ -1,0 +1,9 @@
+.section{
+    @apply text-center mb-40;
+}
+.title{
+    @apply font-semibold text-l;
+}
+.subtitle{
+    @apply text-md text-purple mb-8;
+}

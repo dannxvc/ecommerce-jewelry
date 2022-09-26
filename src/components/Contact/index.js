@@ -6,7 +6,7 @@ function Contact() {
             <input type="text" placeholder="Full Name"/>
             <input type="text" placeholder="Email Address"/>
             <textarea type="text" placeholder="Message"/>
-            <Button text={"Send"}/>
+            <Button text={"Send"} classBtn={"btn_black"}/>
         </form>
      );
 }

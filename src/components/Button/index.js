@@ -1,6 +1,7 @@
-function Button({text}) {
+import './styles.css'
+function Button({text, classBtn}) {
     return ( 
-        <button>
+        <button className={`btn ${classBtn}`}>
             {text}
         </button>
      );

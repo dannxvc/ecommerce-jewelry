@@ -1,0 +1,12 @@
+.card{
+    @apply grid gap-8 p-8 shadow-lg rounded-3xl shadow-purple-light text-center;
+}
+.card_img{
+    @apply w-auto h-36 m-auto;
+}
+.card_title{
+    @apply font-semibold text-md
+}
+.card_subtitle{
+    @apply text-purple text-sm;
+}

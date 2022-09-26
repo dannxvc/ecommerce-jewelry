@@ -1,10 +1,13 @@
 import Button from '../../components/Button';
+import './styles.css';
 function Card({title,subtitle,price,img}) {
     return ( 
-        <div>
+        <div className="card">
             {img}
-            <h3>{title}</h3>
-            <p>{subtitle}</p>
+            <div>
+                <h3 className="card_title">{title}</h3>
+                <p className="card_subtitle">{subtitle}</p>
+            </div>
             <p>{price}</p>
             <Button
                 text={"Add to cart"}

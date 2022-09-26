@@ -13,3 +13,6 @@
 .img_bg{
     @apply absolute top-0 right-0
 }
+.cards_container{
+    @apply grid grid-cols-3 gap-8 w-[80%] max-w-[58rem] m-auto mt-28;
+}

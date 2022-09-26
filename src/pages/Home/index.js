@@ -20,21 +20,21 @@ function Home() {
             title: "Diamond Engagement",
             description: "18k white gold & 0.23 TCW",
             price:"PEN 3,342,50",
-            img:<img src={ProductOne} alt="Diamond Engagement"/>
+            img:<img src={ProductOne} className="card_img" alt="Diamond Engagement"/>
         },
         {
             id:"2",
             title: "Diamond Aqua",
             description: "18k white gold & 0.23 TCW",
             price:"PEN 3,342,50",
-            img:<img src={ProductTwo} alt="Diamond Engagement"/>
+            img:<img src={ProductTwo} className="card_img" alt="Diamond Engagement"/>
         },
         {
             id:"3",
             title: "Gold Pink",
             description: "24k gold & 0.23 TCW",
             price:"PEN 3,342,50",
-            img:<img src={ProductThree} alt="Diamond Engagement"/>
+            img:<img src={ProductThree} className="card_img" alt="Diamond Engagement"/>
         }
     ];
     return ( 
@@ -56,16 +56,18 @@ function Home() {
                 title={"Best Sellers"} 
                 subtitle={"Our best rings"}   
             >
-                <Button text={"See all products"}/>
-                {products.map((product)=>(
-                    <Card
-                        key={product.id}
-                        title={product.title}
-                        subtitle={product.description}
-                        price={product.price}
-                        img={product.img}
-                    />
-                ))}
+                <Button text={"See all products"} classBtn={"btn_black"}/>
+                <div className={styles.cards_container}>
+                    {products.map((product)=>(
+                        <Card
+                            key={product.id}
+                            title={product.title}
+                            subtitle={product.description}
+                            price={product.price}
+                            img={product.img}
+                        />
+                    ))}
+                </div>
             </Section>
 
             <Section
