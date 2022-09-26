@@ -1,3 +1,4 @@
+import styles from './styles.module.css';
 function FAQ() {
     let faqItems = [
         {
@@ -22,14 +23,14 @@ function FAQ() {
         }
     ];
     return ( 
-        <div>
+        <div className={styles.faq_container}>
         {faqItems.map(item=>(
-            <details key={item.question}>
-                    <summary>
+            <details key={item.question} className={styles.faq_item}>
+                    <summary className={styles.faq_question}>
                         {item.question}
                     </summary>
-                    <div>
-                        <p>
+                    <div className={styles.faq_answer_container}>
+                        <p className={styles.faq_answer}>
                             {item.answer}
                         </p>  
                     </div>
