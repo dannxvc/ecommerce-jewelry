@@ -1,18 +1,40 @@
-.header{
-    @apply min-h-screen;
-}
 .hero{
-    @apply min-h-screen justify-start relative flex items-center w-10/12 max-w-3xl m-auto;
+    @apply min-h-[60vh] justify-center relative flex flex-col items-center w-10/12 max-w-3xl m-auto pt-40;
 }
 .img_header{
-    @apply h-auto w-xxl absolute left-20;
+    @apply h-auto w-[25rem] left-0 top-20;
 }
 .h1{
-    @apply text-xl w-96 z-10 font-semibold;
+    @apply text-[2rem] z-10 font-semibold;
 }
 .img_bg{
     @apply absolute top-0 right-0
 }
 .cards_container{
-    @apply grid grid-cols-3 gap-8 w-[80%] max-w-[58rem] m-auto mt-28;
+    @apply grid grid-cols-1 gap-8 w-[90%] max-w-[18rem] m-auto mt-10;
+}
+@media only screen and (min-width: 42rem) {
+    .cards_container{
+        @apply grid-cols-2 mt-28 w-[80%] max-w-[36rem] ;
+    }
+    .hero{
+        @apply min-h-[80vh];
+    }
+    .h1{
+        @apply text-l;
+    }
+}
+@media only screen and (min-width: 72rem) {
+    .cards_container{
+        @apply grid-cols-3 w-[90%] max-w-[58rem];
+    }
+    .img_header{
+        @apply absolute w-xxl left-20 top-auto;
+    }
+    .hero{
+        @apply min-h-screen justify-start flex-row py-0;
+    }
+    .h1{
+        @apply text-xl w-[30rem];
+    }
 }

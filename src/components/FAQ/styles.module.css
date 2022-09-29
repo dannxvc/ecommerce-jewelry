@@ -1,21 +1,37 @@
 .faq_container{
-    @apply max-w-[45rem] w-[100%] m-auto mt-20;
+    @apply max-w-[45rem] w-[90%] m-auto;
 }
 .faq_item{
-    @apply m-auto p-3 mb-6 border-solid border-white rounded-full border shadow-lg shadow-purple-light;
+    @apply m-auto p-3 mb-6 border-solid border-black cursor-pointer rounded-full border shadow-md shadow-purple-light;
 }
 .faq_item:hover{
-    @apply shadow-md shadow-purple-light;
+    @apply shadow-sm;
 }
 .faq_question{
-    @apply font-medium text-[1.1rem] cursor-pointer;
+    @apply font-medium text-[.8rem] ;
 }
 .faq_answer_container{
     @apply p-4 pt-7 mt-3 border-dotted border-2 border-transparent border-t-purple-light ;
 }
 .faq_answer{
-    @apply text-purple;
+    @apply text-purple text-[.8rem];
 }
 .faq_question::marker{
     content: none;
+}
+@media only screen and (min-width: 42rem) {
+    .faq_question{
+        @apply font-medium text-[1rem] ;
+    }
+    .faq_answer{
+        @apply text-[.9rem];
+    }
+}
+@media only screen and (min-width: 72rem) {
+    .faq_question{
+        @apply font-medium text-[1.1rem] ;
+    }
+    .faq_answer{
+        @apply text-[1rem];
+    }
 }

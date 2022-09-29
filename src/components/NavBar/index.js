@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import styles from'./styles.module.css';
 function NavBar() {
+    const [isNavBarOpen, setNavBarOpen] = useState(false);
     let navItems = [
         "Home",
         "Products",
@@ -11,10 +13,16 @@ function NavBar() {
             <div>
                 <p className="logo">RingRing</p>
             </div>
-            <ul className={styles.nav_items}>
+            <button 
+                className={`${isNavBarOpen ? styles.hamburguer_open:styles.hamburguer}`}
+                onClick={() => isNavBarOpen?setNavBarOpen(false):setNavBarOpen(true)}
+            >
+            </button>
+            <ul className={`${isNavBarOpen ? styles.nav_items_open:styles.nav_items}`}>
             {navItems.map((item,i)=>(
                 <li key={i}>
                     <a href="/">{item}</a>
+                    {isNavBarOpen&&<hr className={styles.separator}/>}
                 </li>
             ))}
                 <li>

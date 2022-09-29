@@ -3,10 +3,10 @@ body{
     @apply text-black;
 }
 .icon{
-    @apply h-9;
+    @apply h-7;
 }
 .logo{
-    @apply text-[2rem] font-semibold;
+    @apply text-[1rem] font-semibold relative;
 }
 html{
     box-sizing: border-box;
@@ -18,14 +18,32 @@ html{
     scroll-behavior: smooth;
 }
 .input{
-    @apply border rounded-full p-4 bg-transparent;
+    @apply border rounded-full p-2 bg-transparent;
 }
-.input::placeholder{
-    @apply text-black;
+.input::placeholder,
+.textarea::placeholder{
+    @apply text-black text-[.8rem];
 }
 .textarea{
-    @apply h-36 border rounded-3xl p-4 bg-transparent resize-none;
+    @apply h-24 border rounded-3xl p-2 bg-transparent resize-none;
 }
-.textarea::placeholder{
-    @apply text-black;
+@media only screen and (min-width: 42rem) {
+    .logo{
+        @apply text-[2rem];
+    }
+    .input{
+        @apply p-4;
+    }
+    .textarea{
+        @apply p-4 h-36;
+    }
+    .input::placeholder,
+    .textarea::placeholder{
+        @apply text-black text-[1rem];
+    }
+}
+@media only screen and (min-width: 72rem) {
+    .icon{
+        @apply h-9;
+    }
 }

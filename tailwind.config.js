@@ -29,7 +29,8 @@ module.exports = {
       'purple-transparent': '#F6EEFF',
       'orange': '#F27D85',
       'white': '#FFFFFF',
-      'transparent':'transparent'
+      'transparent':'transparent',
+      'glass':'rgba(var(--glass), 0.95)',
     }
   },
   plugins: [],

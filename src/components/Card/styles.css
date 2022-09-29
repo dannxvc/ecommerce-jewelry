@@ -5,8 +5,16 @@
     @apply w-auto h-36 m-auto;
 }
 .card_title{
-    @apply font-semibold text-md
+    @apply font-semibold text-[1rem];
 }
 .card_subtitle{
     @apply text-purple text-sm;
+}
+@media only screen and (min-width: 72rem) {
+    .card_title{
+        @apply text-md;
+    }
+    .card_subtitle{
+        @apply text-purple text-sm;
+    }
 }

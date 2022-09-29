@@ -1,9 +1,48 @@
-.navbar, .nav_items{
-    @apply flex items-center;
+.navbar,.nav_items_open{
+    @apply flex items-center z-20;
 }
 .navbar{
-    @apply z-20 backdrop-blur fixed w-full text-md justify-between h-24 px-40 font-semibold;
+    @apply backdrop-blur fixed w-full text-md justify-between h-24 px-8 font-semibold;
+}
+.hamburguer,.hamburguer_open{
+    @apply relative cursor-pointer bg-transparent flex w-8 h-auto z-10;
+}
+.hamburguer{
+    content: url(../../img/icons/hamburguer.svg);
+}
+.hamburguer_open{
+    content: url(../../img/icons/cross.svg);
 }
 .nav_items{
-    @apply gap-14;
+    @apply hidden;
+}
+.nav_items_open{
+    @apply 
+        absolute flex-col gap-2 top-[5.5rem] 
+        right-[2.6rem] p-2 text-[1rem] font-light 
+        rounded-md w-44 bg-glass shadow-sm
+        border border-solid border-purple-light; 
+}
+.separator{
+    @apply w-full border-purple-light;
+}
+
+@media only screen and (min-width: 42rem) {
+    .navbar{
+        @apply px-20;
+    }
+    .nav_items_open{
+        @apply right-[5.2rem]; 
+    }
+}
+@media only screen and (min-width: 72rem) {
+    .navbar{
+        @apply px-40;
+    }
+    .hamburguer,.hamburguer_open{
+        @apply hidden;
+    }
+    .nav_items{
+        @apply flex flex-row items-center gap-14;
+    }
 }

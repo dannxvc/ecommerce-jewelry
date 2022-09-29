@@ -1,8 +1,8 @@
 .btn{
-    @apply p-2 border-2 border-solid rounded-full border-black shadow-md shadow-purple-light transition ease-in-out;
+    @apply text-sm p-2 border-2 border-solid rounded-full border-black shadow-md shadow-purple-light transition ease-in-out;
 }
 .btn_black{
-    @apply w-72 p-4 bg-black text-white m-auto;
+    @apply max-w-[18rem] w-[80%] p-4 bg-black text-white m-auto;
 }
 .btn_black:hover{
     @apply bg-transparent text-black transition ease-in-out;
@@ -12,4 +12,9 @@
 }
 .btn:hover{
     @apply shadow-sm;
+}
+@media only screen and (min-width: 72rem) {
+    .btn{
+        @apply text-md;
+    }
 }

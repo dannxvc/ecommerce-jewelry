@@ -1,9 +1,28 @@
 .section{
-    @apply text-center pb-40;
+    @apply text-center py-20;
 }
 .title{
-    @apply font-semibold text-l;
+    @apply font-semibold text-[1.4rem];
 }
 .subtitle{
-    @apply text-md text-purple mb-8;
+    @apply text-[.9rem] text-purple mb-8 px-4;
+}
+@media only screen and (min-width: 42rem) {
+    .title{
+        @apply font-semibold text-[1.6rem];
+    }
+    .subtitle{
+        @apply text-[1rem] text-purple mb-8 px-4;
+    }
+}
+@media only screen and (min-width: 72rem) {
+    .title{
+        @apply text-l;
+    }
+    .subtitle{
+        @apply text-md;
+    }
+    .section{
+        @apply pb-40;
+    }
 }
