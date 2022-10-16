@@ -1,5 +1,5 @@
 import Button from '../../components/Button';
-import './styles.css';
+import './Card.css';
 function Card({title,subtitle,price,img}) {
     return ( 
         <div className="card">

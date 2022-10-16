@@ -1,4 +1,4 @@
-import './styles.css'
+import './Button.css'
 function Button({text, classBtn}) {
     return ( 
         <button className={`btn ${classBtn}`}>

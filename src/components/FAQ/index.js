@@ -1,4 +1,4 @@
-import styles from './styles.module.css';
+import styles from './FAQ.module.css';
 function FAQ() {
     let faqItems = [
         {

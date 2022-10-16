@@ -1,5 +1,5 @@
 import Button from "../Button";
-import styles from './styles.module.css';
+import styles from './Contact.module.css';
 function Contact() {
     return ( 
         <form className={styles.contact_container}>

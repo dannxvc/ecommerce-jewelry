@@ -1,17 +1,15 @@
 import Card from '../../components/Card';
-import Footer from '../../components/Footer';
-import NavBar from '../../components/NavBar';
 import Button from '../../components/Button';
 import Section from '../../components/Section';
-import { default as RingHeader } from '../../img/products/ring-white-silver.png';
-import { default as Background } from '../../img/background.png';
 import { default as ProductOne } from '../../img/products/ring-white-small-diamonds-silver.png';
 import { default as ProductTwo } from '../../img/products/ring-green-small-silver.png';
 import { default as ProductThree } from '../../img/products/ring-red-gold.png';
 import FAQ from '../../components/FAQ';
 import '../../App.css';
-import styles from './styles.module.css';
+import styles from './Home.module.css';
 import Contact from '../../components/Contact';
+import { Link, Outlet } from 'react-router-dom';
+import Layout from '../../components/Layout/Layout';
 function Home() {
 
     const products = [
@@ -38,25 +36,18 @@ function Home() {
         }
     ];
     return ( 
-    <>
-        <header className={styles.header}>
-            <NavBar></NavBar>
-            <div className={styles.hero}>
-                <h1 className={styles.h1}>
-                    <span className='text-purple'>Best </span>  
-                    quality 
-                    <span className='text-orange'> Rings</span>
-                </h1>
-                <img className={styles.img_header} src={RingHeader} alt="Diamond Engagement"/>
-            </div>
-            <img className={styles.img_bg} src={Background} alt="Diamond Engagement"/>
-        </header>
-        <main>
+        <Layout
+            textPurple={"Best"}
+            textBlack={"Quality"}
+            textOrange={"Rings"}
+        >
             <Section
                 title={"Best Sellers"} 
                 subtitle={"Our best rings"}   
             >
-                <Button text={"See all products"} classBtn={"btn_black"}/>
+                <Link to="/products">
+                    <Button text={"See all products"} classBtn={"btn_black"}/>
+                </Link>
                 <div className={styles.cards_container}>
                     {products.map((product)=>(
                         <Card
@@ -69,23 +60,22 @@ function Home() {
                     ))}
                 </div>
             </Section>
-
             <Section
+                id={"faq"}
                 title={"FAQ"} 
                 subtitle={"Got a question? Check this out!"}   
             >
                 <FAQ/>
             </Section>
-
             <Section
+                id={"contact"}
                 title={"Contact"} 
                 subtitle={"Let’s get in touch, send us an email!"}
             >
                 <Contact/>
             </Section>
-        </main>
-        <Footer/>
-    </> 
+            <Outlet/>
+        </Layout> 
     );
 }
 
