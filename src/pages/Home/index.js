@@ -1,4 +1,4 @@
-import Card from '../../components/Card';
+import ProductCard from '../../components/ProductCard';
 import Button from '../../components/Button';
 import Section from '../../components/Section';
 import { default as ProductOne } from '../../img/products/ring-white-small-diamonds-silver.png';
@@ -9,37 +9,35 @@ import '../../App.css';
 import styles from './Home.module.css';
 import Contact from '../../components/Contact';
 import { Link, Outlet } from 'react-router-dom';
-import Layout from '../../components/Layout/Layout';
+import Layout from '../../components/Layout';
 function Home() {
 
     const products = [
         {
             id:"1",
-            title: "Diamond Engagement",
+            name: "Diamond Engagement",
             description: "18k white gold & 0.23 TCW",
-            price:"PEN 3,342,50",
-            img:<img src={ProductOne} className="card_img" alt="Diamond Engagement"/>
+            price:4342.50,
+            img:ProductOne
         },
         {
             id:"2",
-            title: "Diamond Aqua",
+            name: "Diamond Aqua",
             description: "18k white gold & 0.23 TCW",
-            price:"PEN 3,342,50",
-            img:<img src={ProductTwo} className="card_img" alt="Diamond Engagement"/>
+            price:3142.50,
+            img:ProductTwo
         },
         {
             id:"3",
-            title: "Gold Pink",
+            name: "Gold Pink",
             description: "24k gold & 0.23 TCW",
-            price:"PEN 3,342,50",
-            img:<img src={ProductThree} className="card_img" alt="Diamond Engagement"/>
+            price:7341.50,
+            img:ProductThree
         }
     ];
     return ( 
         <Layout
-            textPurple={"Best"}
-            textBlack={"Quality"}
-            textOrange={"Rings"}
+            page={"home"}
         >
             <Section
                 title={"Best Sellers"} 
@@ -50,9 +48,9 @@ function Home() {
                 </Link>
                 <div className={styles.cards_container}>
                     {products.map((product)=>(
-                        <Card
+                        <ProductCard
                             key={product.id}
-                            title={product.title}
+                            name={product.name}
                             subtitle={product.description}
                             price={product.price}
                             img={product.img}

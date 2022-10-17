@@ -8,10 +8,10 @@
     @apply relative cursor-pointer bg-transparent flex w-8 h-auto z-10;
 }
 .hamburguer{
-    content: url(../../img/icons/hamburguer.svg);
+    content: url(../img/icons/hamburguer.svg);
 }
 .hamburguer_open{
-    content: url(../../img/icons/cross.svg);
+    content: url(../img/icons/cross.svg);
 }
 .nav_items{
     @apply hidden;

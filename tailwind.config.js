@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       height: {
         'xxl': '50rem',
+        main:'4rem',
       },
       width: {
         'xxl': '50rem',
@@ -31,6 +32,7 @@ module.exports = {
       'white': '#FFFFFF',
       'transparent':'transparent',
       'glass':'rgba(var(--glass), 0.95)',
+      'glass-dark':'rgba(var(--glass-dark), 0.5)',
     }
   },
   plugins: [],

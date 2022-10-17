@@ -3,17 +3,18 @@ import './App.css';
 import './index.css';
 import { Route, Routes } from 'react-router-dom';
 import Products from './pages/Products';
-import Modal from './components/Modal';
+import Cart from './pages/Cart';
+import { ShopProvider } from './services/ShopContext';
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Home/>}>
-        <Route path='/cart' element={<Modal/>}/>
-      </Route>
-      <Route path='/products' element={<Products/>}>
-        {/* <Route path='/cart' element={<Modal/>}/> */}
-      </Route>
-    </Routes>
+    <ShopProvider>
+      <Routes>
+        <Route path='/' element={<Home/>}>
+          <Route path='/cart' element={<Cart/>}/>
+        </Route>
+        <Route path='/products' element={<Products/>}/>
+      </Routes>
+    </ShopProvider>
   );
 }
 

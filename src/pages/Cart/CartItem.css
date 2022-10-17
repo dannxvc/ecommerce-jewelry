@@ -1,0 +1,18 @@
+.cart_item{
+    @apply grid grid-cols-4 text-center py-1;
+}
+.cart_trash{
+    @apply h-7 w-auto;
+}
+.cart_product_icon{
+    @apply h-20 w-auto;
+}
+.cart-item-center{
+    @apply flex justify-center items-center;
+}
+.cart-item-left{
+    @apply flex justify-start items-center;
+}
+.cart-item-description{
+    @apply text-[.8rem];
+}

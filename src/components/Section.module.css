@@ -1,5 +1,5 @@
 .section{
-    @apply text-center py-20;
+    @apply text-center pb-20 pt-32;
 }
 .title{
     @apply font-semibold text-[1.4rem];

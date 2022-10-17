@@ -1,0 +1,9 @@
+.container{
+    @apply max-w-[70rem] w-[80%] mx-auto h-[85%] overflow-scroll mt-12;
+}
+.cart_total_container{
+    @apply flex flex-col p-10 items-center gap-5;
+}
+.cart_total{
+    @apply font-bold;
+}

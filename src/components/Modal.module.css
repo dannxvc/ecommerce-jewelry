@@ -1,0 +1,12 @@
+.container{
+    @apply flex items-center fixed inset-0 backdrop-blur z-20 bg-glass-dark;
+}
+.modal{
+    @apply relative h-[80%] min-h-[50rem] max-w-[70rem] w-[90%] mx-auto bg-white rounded-[30px] flex flex-col;
+}
+.title{
+    @apply text-center font-bold text-[2.5rem] mt-24;
+}
+.close{
+    @apply absolute top-10 right-10 font-bold text-md;
+}
