@@ -7,3 +7,9 @@
 .cart_total{
     @apply font-bold;
 }
+.cart_empty_icon{
+    @apply h-auto w-[20%] max-w-[15rem];
+}
+.cart_empty_description{
+    @apply text-[1.2rem];
+}

@@ -10,11 +10,14 @@
 .btn_white{
     @apply border-white;
 }
+.btn_orange{
+    @apply border-orange text-orange bg-orange bg-opacity-10;
+}
 .btn:hover{
     @apply shadow-sm;
 }
 @media only screen and (min-width: 72rem) {
     .btn{
-        @apply text-md;
+        @apply text-[1rem];
     }
 }

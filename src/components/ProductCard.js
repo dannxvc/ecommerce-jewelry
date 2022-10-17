@@ -38,7 +38,7 @@ function ProductCard({name,subtitle,price,img}) {
                 isInCart={isInCart}
                 onClick={handleClick}
                 text={`${isInCart?"Remove from cart":"Add to cart"}`}
-                classBtn={"btn_white"}
+                classBtn={`${isInCart?"btn_orange":"btn_white"}`}
             />
         </div>
     );

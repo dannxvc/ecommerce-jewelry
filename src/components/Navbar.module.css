@@ -26,6 +26,12 @@
 .separator{
     @apply w-full border-purple-light;
 }
+.cart_products{
+    @apply flex justify-center items-center 
+    absolute -top-2 -right-2 bg-orange
+    rounded-full w-[1.2rem] h-[1.2rem]
+    text-white text-[0.9rem];
+}
 
 @media only screen and (min-width: 42rem) {
     .navbar{

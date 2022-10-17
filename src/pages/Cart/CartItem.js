@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import useShop from '../../services/ShopContext';
 import './CartItem.css';
-function CartItem({img,name,price,onClick}) {
+function CartItem({img,name,price}) {
     const { products, addToCart, removeFromCart} = useShop();
     const [isInCart, setIsInCart] = useState(false);
 

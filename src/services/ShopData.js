@@ -4,7 +4,7 @@ import { default as ProductThree } from '../img/products/ring-red-gold.png';
 import { default as ProductFour } from '../img/products/ring-blue-gold.png';
 import { default as ProductFive } from '../img/products/ring-green-big-silver.png';
 import { default as ProductSix } from '../img/products/ring-perl-white-gold.png';
-import { default as ProductSeven} from '../img/products/ring-white-small-diamonds-silver.png';
+import { default as ProductSeven} from '../img/products/ring-white-gold.png';
 import { default as ProductEight } from '../img/products/ring-white-silver.png';
 
 export const shopData = [
@@ -52,14 +52,14 @@ export const shopData = [
     },
     {
         id:"7",
-        name: "Ocean Blue",
+        name: "Infinite Diamond",
         description: "18k gold & 0.23 TCW",
         price:5322.50,
         img:ProductSeven
     },
     {
         id:"8",
-        name: "Diamond Aqua",
+        name: "Diamond White",
         description: "18k white gold & 0.23 TCW",
         price:3142.50,
         img:ProductEight
