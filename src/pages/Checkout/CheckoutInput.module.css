@@ -1,0 +1,12 @@
+.general_container{
+    @apply px-5;
+}
+.input_container{
+    @apply grid grid-flow-col auto-cols-fr h-16 items-center;
+}
+.input_separator{
+    @apply border-purple;
+}
+.input{
+    @apply border border-black rounded-full p-1 pl-3 text-purple;
+}

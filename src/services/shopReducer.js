@@ -1,6 +1,7 @@
 export const initialState = {
     total: 0,
-    products:[]
+    products:[],
+    client:{}
 };
 
 const shopReducer = (state, action) => {
@@ -24,6 +25,12 @@ const shopReducer = (state, action) => {
                 ...state,
                 total:payload.total
             };  
+        case "ADD_CLIENT_DATA":
+            console.log("ADD_CLIENT_DATA", payload)
+            return{
+                ...state,
+                client:payload.client
+            };
         default:
             throw new Error();
     };

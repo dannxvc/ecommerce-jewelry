@@ -1,5 +1,5 @@
 .btn{
-    @apply text-sm p-2 border-2 border-solid rounded-full border-black shadow-md shadow-purple-light transition ease-in-out;
+    @apply text-sm p-2 border-2 border-solid rounded-full border-black shadow-md shadow-purple-light transition ease-in-out text-center;
 }
 .btn_black{
     @apply max-w-[18rem] w-[80%] p-4 bg-black text-white m-auto;

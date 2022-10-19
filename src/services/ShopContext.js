@@ -42,11 +42,23 @@ export const ShopProvider = ({ children }) => {
         });
     };
 
+    const addClientData = (client) => {
+        // state.client = ...client;
+
+        dispatch ({
+            type: "ADD_CLIENT_DATA",
+            payload:{
+                client: {...client}
+            }
+        });
+    };
+
     const value = {
         total: state.total,
         products: state.products,
         addToCart,
-        removeFromCart
+        removeFromCart,
+        addClientData
     }
 
     return <ShopContext.Provider value={value}>{children}</ShopContext.Provider>

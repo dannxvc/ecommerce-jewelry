@@ -1,5 +1,8 @@
 .cart_item{
-    @apply grid grid-cols-4 text-center py-1;
+    @apply grid grid-cols-4 text-left py-1;
+}
+.cart_item_checkout{
+    @apply grid-cols-3;
 }
 .cart_trash{
     @apply h-7 w-auto;
