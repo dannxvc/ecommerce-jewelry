@@ -43,8 +43,6 @@ export const ShopProvider = ({ children }) => {
     };
 
     const addClientData = (client) => {
-        // state.client = ...client;
-
         dispatch ({
             type: "ADD_CLIENT_DATA",
             payload:{
@@ -56,6 +54,7 @@ export const ShopProvider = ({ children }) => {
     const value = {
         total: state.total,
         products: state.products,
+        client:state.client,
         addToCart,
         removeFromCart,
         addClientData

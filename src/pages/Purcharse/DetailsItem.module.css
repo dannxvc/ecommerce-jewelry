@@ -1,0 +1,9 @@
+.item_container{
+    @apply w-full ;
+}
+.item_description{
+    @apply grid grid-flow-col auto-cols-auto w-full;
+}
+.item_data{
+    @apply text-right;
+}

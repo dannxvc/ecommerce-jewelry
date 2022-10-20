@@ -67,7 +67,7 @@ function Checkout() {
                             onChange={e=>onChange(e,'paymentmethod')}
                         />
                     </form>
-                    <Link to="/cart" className="w-full mx-auto flex">
+                    <Link to="/purcharse" className="w-full mx-auto flex">
                         <Button
                             text={"FINISH PROCESS"}
                             classBtn={"btn_black"}

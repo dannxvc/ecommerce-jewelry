@@ -1,0 +1,7 @@
+.purcharse_container{
+    @apply grid grid-cols-2 border border-black
+            rounded-[1rem] gap-[3rem]
+            items-center p-20 w-[90%] 
+            max-w-[60rem] mx-auto h-[60%]
+            mt-8;
+}
